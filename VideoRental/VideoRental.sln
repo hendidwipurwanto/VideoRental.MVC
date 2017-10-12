@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FD7C91A9-B6B2-45DB-9928-38F75E79016F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Core", "1.Core", "{FD7C91A9-B6B2-45DB-9928-38F75E79016F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{CDD06A63-1040-446C-814A-0B1C40A5FE8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.Common", "Common\VideoRental.Common.csproj", "{CDD06A63-1040-446C-814A-0B1C40A5FE8C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F82375F5-7BEC-4EB1-96DA-5529CCAFC901}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{F82375F5-7BEC-4EB1-96DA-5529CCAFC901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{B77F574B-C7CF-467A-BC1A-2AE800AF4603}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.ViewModel", "ViewModel\VideoRental.ViewModel.csproj", "{B77F574B-C7CF-467A-BC1A-2AE800AF4603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModel", "EntityModel\EntityModel.csproj", "{30290A96-CD6E-4D18-B26D-3E18696E9CA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.EntityModel", "EntityModel\VideoRental.EntityModel.csproj", "{30290A96-CD6E-4D18-B26D-3E18696E9CA5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{700068A9-A5D7-4BF7-8E75-6EAAC2B35DFE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DataAccess", "3.DataAccess", "{700068A9-A5D7-4BF7-8E75-6EAAC2B35DFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{77614B36-7557-4704-9828-FBC2F03AD0F0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.BusinessProses", "4.BusinessProses", "{77614B36-7557-4704-9828-FBC2F03AD0F0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{EA52AEFC-F472-46CC-8C5D-8AFF142A8022}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.Repository", "Repository\VideoRental.Repository.csproj", "{705C30D4-4E2D-47A4-94A0-E383B72497E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{705C30D4-4E2D-47A4-94A0-E383B72497E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.Service", "Service\VideoRental.Service.csproj", "{B21E6F2A-473F-4B6B-ADE7-AEE447B78846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{B21E6F2A-473F-4B6B-ADE7-AEE447B78846}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Presentation", "5.Presentation", "{5C3C2F59-9C4D-41B4-83F1-62803EB0F3D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
