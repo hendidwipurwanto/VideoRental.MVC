@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using VideoRental.Common.BaseRepository;
 using VideoRental.EntityModel.Entities;
-using VideoRental.Repository.IRepositories;
+using VideoRental.Repository.Interfaces;
 
 namespace VideoRental.Repository.Implementations
 {

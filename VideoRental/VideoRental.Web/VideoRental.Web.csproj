@@ -346,6 +346,10 @@
       <Project>{705C30D4-4E2D-47A4-94A0-E383B72497E0}</Project>
       <Name>VideoRental.Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Service\VideoRental.Service.csproj">
+      <Project>{B21E6F2A-473F-4B6B-ADE7-AEE447B78846}</Project>
+      <Name>VideoRental.Service</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModel\VideoRental.ViewModel.csproj">
       <Project>{b77f574b-c7cf-467a-bc1a-2ae800af4603}</Project>
       <Name>VideoRental.ViewModel</Name>

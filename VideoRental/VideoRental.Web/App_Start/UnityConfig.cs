@@ -1,8 +1,10 @@
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using Unity.Mvc5;
-using VideoRental.Repository.IRepositories;
+using VideoRental.Repository.Interfaces;
 using VideoRental.Repository.Implementations;
+using VideoRental.Service.Interfaces;
+using VideoRental.Service.Implementations;
 
 namespace VideoRental.Web
 {
@@ -20,6 +22,7 @@ namespace VideoRental.Web
             container.RegisterType<IUserDetailRepository, UserDetailRepository>();
 
             // Service
+            container.RegisterType<IUserDetailService, UserDetailService>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

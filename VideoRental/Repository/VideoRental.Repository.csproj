@@ -49,8 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRepositories\IGenderRepository.cs" />
-    <Compile Include="IRepositories\IUserDetailRepository.cs" />
+    <Compile Include="Interfaces\IGenderRepository.cs" />
+    <Compile Include="Interfaces\IUserDetailRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementations\GenderRepository.cs" />
     <Compile Include="Implementations\UserDetailRepository.cs" />
