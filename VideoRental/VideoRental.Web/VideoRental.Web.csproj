@@ -241,6 +241,18 @@
     <Compile Include="Migrations\201710150418531_Seed_User_Admin.Designer.cs">
       <DependentUpon>201710150418531_Seed_User_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710150602399_Add_Gender_table.cs" />
+    <Compile Include="Migrations\201710150602399_Add_Gender_table.Designer.cs">
+      <DependentUpon>201710150602399_Add_Gender_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710150603493_Seed_Gender.cs" />
+    <Compile Include="Migrations\201710150603493_Seed_Gender.Designer.cs">
+      <DependentUpon>201710150603493_Seed_Gender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710150613032_User_Details_table.cs" />
+    <Compile Include="Migrations\201710150613032_User_Details_table.Designer.cs">
+      <DependentUpon>201710150613032_User_Details_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resolver\LoggedAs.cs" />
@@ -326,6 +338,10 @@
       <Project>{cdd06a63-1040-446c-814a-0b1c40a5fe8c}</Project>
       <Name>VideoRental.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EntityModel\VideoRental.EntityModel.csproj">
+      <Project>{30290A96-CD6E-4D18-B26D-3E18696E9CA5}</Project>
+      <Name>VideoRental.EntityModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModel\VideoRental.ViewModel.csproj">
       <Project>{b77f574b-c7cf-467a-bc1a-2ae800af4603}</Project>
       <Name>VideoRental.ViewModel</Name>
@@ -340,6 +356,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710150418531_Seed_User_Admin.resx">
       <DependentUpon>201710150418531_Seed_User_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710150602399_Add_Gender_table.resx">
+      <DependentUpon>201710150602399_Add_Gender_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710150603493_Seed_Gender.resx">
+      <DependentUpon>201710150603493_Seed_Gender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710150613032_User_Details_table.resx">
+      <DependentUpon>201710150613032_User_Details_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

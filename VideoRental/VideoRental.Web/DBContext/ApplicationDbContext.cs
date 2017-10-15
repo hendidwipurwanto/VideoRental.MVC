@@ -17,5 +17,6 @@ namespace VideoRental.Web.DbContext
         }
 
         public DbSet<Gender> Genders { get; set; }
+        public DbSet<UserDetail> UserDetails { get; set; }
     }
 }
