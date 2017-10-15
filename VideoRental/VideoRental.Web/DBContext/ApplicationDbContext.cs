@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
+using VideoRental.EntityModel.Entities;
 
 namespace VideoRental.Web.DbContext
 {
@@ -13,5 +15,7 @@ namespace VideoRental.Web.DbContext
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Gender> Genders { get; set; }
     }
 }
