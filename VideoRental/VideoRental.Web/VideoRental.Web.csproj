@@ -342,6 +342,10 @@
       <Project>{30290A96-CD6E-4D18-B26D-3E18696E9CA5}</Project>
       <Name>VideoRental.EntityModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Repository\VideoRental.Repository.csproj">
+      <Project>{705C30D4-4E2D-47A4-94A0-E383B72497E0}</Project>
+      <Name>VideoRental.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModel\VideoRental.ViewModel.csproj">
       <Project>{b77f574b-c7cf-467a-bc1a-2ae800af4603}</Project>
       <Name>VideoRental.ViewModel</Name>
