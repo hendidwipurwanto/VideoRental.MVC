@@ -16,7 +16,7 @@ namespace VideoRental.Common.BaseRepository
             _context = context;
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetById(string id)
         {
             return _context.Set<TEntity>().Find(id);
         }
