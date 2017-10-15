@@ -103,13 +103,18 @@
     <Compile Include="Account\VerifyCodeViewModel.cs" />
     <Compile Include="Account\VerifyPhoneNumberViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\RoleView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\" />
+    <ProjectReference Include="..\Common\VideoRental.Common.csproj">
+      <Project>{CDD06A63-1040-446C-814A-0B1C40A5FE8C}</Project>
+      <Name>VideoRental.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
