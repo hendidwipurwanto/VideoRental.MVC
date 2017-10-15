@@ -10,6 +10,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using VideoRental.Web.DbContext;
 using VideoRental.ViewModel.Account;
+using VideoRental.Service.Interfaces;
+using System.Collections.Generic;
+using VideoRental.EntityModel.Entities;
+using AutoMapper;
 
 namespace VideoRental.Web.Controllers
 {
@@ -25,7 +29,7 @@ namespace VideoRental.Web.Controllers
             _context = new ApplicationDbContext();
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -142,6 +146,8 @@ namespace VideoRental.Web.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            ViewBag.GenderId = new SelectList(_context.Genders.ToList(), "Id", "Name");
+
             return View();
         }
 
@@ -152,15 +158,21 @@ namespace VideoRental.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+            ViewBag.GenderId = new SelectList(_context.Genders.ToList(), "Id", "Name");
+
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.UserName, Email = model.Email };
+                // Create User Detail
+                var userDetail = CreateUserDetail(model);
+
+                // Add new User
+                var user = new ApplicationUser { UserName = model.UserName, Email = model.Email, UserDetailId = userDetail.Id };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    ////Assign Role to User start in here 
+                    //Assign Role to User start in here 
                     //await this.UserManager.AddToRoleAsync(user.Id, model.Name);
-                 
+
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
@@ -176,6 +188,19 @@ namespace VideoRental.Web.Controllers
 
             // If we got this far, something failed, redisplay form
             return View(model);
+        }
+
+        private UserDetail CreateUserDetail(RegisterViewModel registerViewModel)
+        {
+            var userDetail = new UserDetail();
+            Mapper.Map(registerViewModel, userDetail);
+            userDetail.Id = Guid.NewGuid().ToString();
+            userDetail.CreatedBy = "system";
+            userDetail.CreatedTime = DateTime.Now;
+            var model = _context.UserDetails.Add(userDetail);
+            _context.SaveChanges();
+
+            return userDetail;
         }
 
         //
