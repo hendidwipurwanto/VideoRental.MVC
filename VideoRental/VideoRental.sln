@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.EntityModel", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DataAccess", "3.DataAccess", "{700068A9-A5D7-4BF7-8E75-6EAAC2B35DFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.BusinessProses", "4.BusinessProses", "{77614B36-7557-4704-9828-FBC2F03AD0F0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.BusinessProcess", "4.BusinessProcess", "{77614B36-7557-4704-9828-FBC2F03AD0F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRental.Repository", "Repository\VideoRental.Repository.csproj", "{705C30D4-4E2D-47A4-94A0-E383B72497E0}"
 EndProject
