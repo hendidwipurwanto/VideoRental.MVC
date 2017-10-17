@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -10,8 +8,6 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using VideoRental.Web.DbContext;
 using VideoRental.ViewModel.Account;
-using VideoRental.Service.Interfaces;
-using System.Collections.Generic;
 using VideoRental.EntityModel.Entities;
 using AutoMapper;
 

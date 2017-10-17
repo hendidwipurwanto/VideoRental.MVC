@@ -226,6 +226,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\UserDetailController.cs" />
     <Compile Include="DbContext\ApplicationDbContext.cs" />
     <Compile Include="DbContext\ApplicationUser.cs" />
     <Compile Include="Global.asax.cs">
@@ -328,6 +329,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\AuthorizeFailed.cshtml" />
     <Content Include="Views\Role\Index.cshtml" />
+    <Content Include="Views\UserDetail\Index.cshtml" />
+    <Content Include="Views\UserDetail\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -32,6 +32,7 @@ namespace VideoRental.Web
 
             // Service
             container.RegisterType<IUserDetailService, UserDetailService>();
+            container.RegisterType<IGenderService, GenderService>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

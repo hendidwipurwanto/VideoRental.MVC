@@ -6,6 +6,7 @@ namespace VideoRental.Web.Controllers
     [LoggedAs(Roles = "Admin, Staff, Guest")]
     public class HomeController : Controller
     {
+        [LoggedAs(Roles = "Admin, Staff, Guest")]
         public ActionResult Index()
         {
             return View();
